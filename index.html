@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/aaa3ef253a.js" crossorigin="anonymous"></script>
 </head>
@@ -18,31 +18,31 @@
                 <li class="nav__link">
                     <a href="#" class="
                     nav__link--anchor 
-                    link__hover-effect
-                    link__hover-effect--black">About</a> 
+                    link__hover--effect
+                    link__hover--effect--black">About</a> 
                 </li>
                 <li class="nav__link">
                     <a href="#" class="
                     nav__link--anchor 
-                    link__hover-effect
-                    link__hover-effect--black">Projects</a> 
+                    link__hover--effect
+                    link__hover--effect--black">Projects</a> 
                 </li>
                 <li class="nav__link">
                     <a href="#" class="
                     nav__link--anchor 
-                    link__hover-effect
-                    link__hover-effect--black">Contact</a> 
+                    link__hover--effect
+                    link__hover--effect--black">Contact</a> 
                 </li>
                 <li class="nav__link">
                     <a href="#" class="
                     nav__link--anchor 
-                    link__hover-effect
-                    link__hover-effect--black"><i class="fa-solid fa-cloud-moon"></i></i></i></i></a> 
+                    link__hover--effect
+                    link__hover--effect--black"><i class="fa-solid fa-cloud-moon click"></i></a> 
                 </li>
                 
             </ul>
         </nav>
-        <hader class="header">
+        <header class="header">
             <h1 class="title">Hey</h1>
             <h1 class="title title--secondary">I'm Bryce.</h1>
             <p class="header__para">
@@ -52,7 +52,119 @@
                 <br>
                 Here's a bit more <span class="header__text"><b>about me.</b></span> 
             </p>
-        </hader>
+            <div class="social__links">
+                <a href="#" class = "social__link click"><i class = "fa-brands fa-git"></i></a>
+                <a href="#" class = "social__link click"><i class = "fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class ="social__link click"><i class = "fa-regular fa-file-pdf"></i></a>
+            </div>
+        </header>
+        <button class="mail__btn click">
+            <i class="fa-solid fa-envelope"></i>
+        </button>
+        <a href="" class="scroll">
+            <div class="scroll__icon click">
+
+            </div>
+        </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+            <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+            <h4 class="modal__subtitle modal__subtitle--about">Frontend Software Engineer.</h4>
+            <p class="modal--para">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Aperiam itaque vitae magni aliquam illum eos voluptatibus! 
+                Lorem ipsum dolor sit amet consectetur, harum officia?
+            </p>
+            <div class="modal__languages">
+                <figure class="modal__language language__html">
+                    <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                    <span class="language__name ">HTML</span>
+                </figure>
+                <figure class="modal__language language__javascript">
+                    <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
+                    <span class="language__name ">JavaScript</span>
+                </figure>
+                
+                <figure class="modal__language language__css">
+                    <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
+                    <span class="language__name ">CSS</span>
+                </figure>
+                
+                <figure class="modal__language language__react">
+                    <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="">
+                    <span class="language__name ">React</span>
+                </figure>
+            </div>
+            </div>
+            <div class="modal__half modal__contact">Let's have a chat</div>
+        </div>
     </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my <span class="header__text">projects</span>
+                </h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/BMWportioMockup.png" class = "project__img" alt="">
+                            <div class="project__wrapper--background">
+
+                            </div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    BMW Landing Concept
+                                </h3>
+                                <h4 class="project__description--subtitle">
+                                    HTML, CSS, JavaScript
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quis magnam reiciendis vel totam, ratione saepe, et dolore facere laboriosam voluptates doloremque recusandae. Ducimus officiis iure odio iste ratione aliquid.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="#" class = "project__description--link click">
+                                        <i class = "fa-brands fa-git"></i>
+                                    </a>
+                                    <a href="#" class = "project__description--link click">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer id="">
+        <div class="container">
+            <div class="row footer__row">
+                <figure>
+                <img src="./assets/logo.svg" alt="" class="footer__img">
+            </figure>
+            <div class="footer__social--list">
+                <a href="" class="
+                footer__social--link
+                link__hover--effect
+                link__hover--effect--white">Github</i></a>
+                <a href="" class="
+                footer__social--link
+                link__hover--effect
+                link__hover--effect--white">LinkedIn</i></a>
+                <a href="" class="
+                footer__social--link
+                link__hover--effect
+                link__hover--effect--white">Resume</i></a>
+                <a href="" class="
+                footer__social--link
+                link__hover--effect
+                link__hover--effect--white">Email</i></a>
+            </div>
+            <div class="footer__copyright">Copyright 2023</div>
+            </div>
+            
+        </div>
+    </footer>
 </body>
 </html>
