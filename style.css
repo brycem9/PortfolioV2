@@ -8,6 +8,12 @@
     font-family: 'Roboto', sans-serif;
 }
 
+label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
 footer {
    background-color: #242424;
    display: flex;
@@ -20,10 +26,25 @@ html {
 
 section {
     background-color: rgb(245, 245, 245);
+    transition: all 300ms ease;
 }
 
 button {
     cursor: pointer;
+}
+
+input:hover, textarea:hover {
+border-color: white;
+
+}
+
+input:focus, textarea:focus {
+    border-color: rgb(255, 66, 45);
+}
+
+
+.asterik {
+    color: rgb(255, 66, 45);
 }
 
 .title {
@@ -34,18 +55,25 @@ button {
 }
 
 .click:hover {
-    transform:scale(1.1) ;
+    transform:scale(1.1);
 }
 .click:active {
     transform: scale(0.8);
 }
+
+
+
 
 .container {
     padding: 50px 0px;
     width: 100%;
 }
 
-
+textarea {
+    resize: vertical;
+    height: 100px;
+    margin-top: 8px;
+}
 
 .row {
     width: 100%;
@@ -56,6 +84,7 @@ button {
 
 .click {
     transition: all ease 300ms;
+    cursor: pointer;
 }
 
 .title--secondary {
@@ -97,6 +126,72 @@ p {
 
 .link__hover--effect--white:after {
     background-color: white;
+}
+
+input, textarea {
+    width: 100%;
+    background-color: #242424;
+    color: white;
+    outline: none;
+    border: 3px solid #c8c4cc;
+    border-top: none;
+    border-left: none;
+    border-right:none;
+    height: 40px;
+    transition: all 300ms ease;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav,
+.scroll,
+.header {
+    opacity: 1;
+    visibility: visible;
+    transition: all 900ms 600ms ease;
+}
+
+.modal--open nav,
+.modal--open .scroll,
+.modal--open .header {
+    opacity: 0;
+    visibility: hidden;
+   transition: all 500ms 200ms ease;
+}
+
+.dark-theme .title, 
+.dark-theme .header__para, 
+.dark-theme .nav__link--anchor,
+.dark-theme .logo,
+.dark-theme .section__title,
+.dark-theme .fa-cloud-moon {
+    color: white;
+    
+}
+
+.dark-theme section {
+    background-color: #242424;
+}
+
+
+.dark-theme .scroll__icon {
+    border-color: white;
+}
+
+.dark-theme .scroll__icon:after {
+    background-color: white;
+}
+
+.dark-theme .link__hover--effect:after {
+    background-color: white;
+}
+
+.dark-theme .mail__btn {
+    background-color: white;
+    color: #242424;
 }
 
 /* 
@@ -164,7 +259,8 @@ LANDING PAGE
     bottom: 32px;
     right: 40px;
     box-shadow: -1px 1px 5px  black;
-
+    position: fixed;
+    z-index: 700;
 }
 
 .scroll {
@@ -260,24 +356,44 @@ MOODL
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    max-width: 1100px;
+    max-width: 1000px;
     height: 700px;
-    box-shadow: 0 20px 80px 0;
     border-radius: 20px;
     overflow: hidden;
     display: flex;
+    margin-top: 25px;
+    visibility: hidden;
+    transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+    z-index: -1;
+}
+
+.modal--open .modal{
+    z-index: 60;
+    box-shadow: 0 20px 80px 0;
+    visibility: visible;
 }
 
 .modal__half {
     width: 50%;
     padding: 40px 72px;
-}
-
-.modal__about {
-    background-color: lightgray;
+    background-color: rgb(247, 245, 245);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    transition: all 300ms ease;
+}
+
+.modal--open .modal__about {
+    transform: translateX(0%);
+}
+
+.modal--open .modal__contact {
+    transform: translateX(0%);
+}
+
+.modal__about {
+    transform: translateX(-110%);
     
 }
 
@@ -326,9 +442,7 @@ MOODL
     filter: brightness(80%); 
 }
 
-.modal__language:hover {
-    
-}
+
 
 .language__name {
     position: absolute;
@@ -343,6 +457,7 @@ MOODL
 
 .modal__subtitle {
     margin: 12px 0 24px 0;
+    font-size: 14px;
 }
 
 .modal__para {
@@ -353,21 +468,108 @@ MOODL
 .modal__contact {
     background-color: #242424;
     color: white;
+    transform: translateX(110%);
 }
 
 .modal__title {
     font-size: 26px;
 }
 
+.form__item {
+    margin-bottom: 20px;
+}
+
+.form__submit {
+    background-color: rgb(255, 66, 45);
+    border: 2px solid rgb(255, 66, 45);
+    border-radius: 2px;
+    color: white;
+    width: 100%;
+    max-width: 240px;
+    font-weight: 700;
+    padding: 12px 24px;
+    font-size: 20px;
+    transition: all 300ms;
+}
+
+.form__submit:hover {
+    border-color: white;
+    background-color: transparent;
+}
+
+
+
+.form__submit:active {
+    border-color: rgb(255, 66, 45);
+    color: rgb(255, 66, 45);
+}
+
+.modal__overlay--loading {
+    background-color: #242424;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    z-index: -1;
+}
+
+.modal__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__overlay--success {
+background-color: rgb(75, 199, 79);
+font-size: 32px;
+font-weight: 700;
+text-align: center;
+padding: 0 20px;
+z-index: -1;
+}
+
+.modal__overlay--visible {
+    z-index: 1;
+    display: flex;
+}
+
+.fa-circle-notch {
+    animation: spinner 1000ms infinite linear;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 @keyframes float {
     0% {
-        transform: translateY(3px);
+        transform: translateY(5px);
     }
 
     100% {
-        transform: translateY(-3px);
+        transform: translateY(-5px);
     }
+}
+
+.modal__exit {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+    z-index: 100;
+    font-size: 32px;
+    cursor: pointer;
 }
 
 /* 
@@ -436,7 +638,7 @@ PROJECTS
 }
 
 .project__description--title {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .project__description--subtitle {
@@ -486,4 +688,58 @@ FOOTER
     justify-content: space-around;
     margin: 20px 0;
     
+}
+
+/* Small phones, tablets, large smartphones */
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 80px;
+    }
+    .header__para {
+        font-size: 20px;
+    }
+
+    .modal {
+        top: 0;
+        left: 0;
+        height: auto;
+        transform: none;
+        width: 100%;
+        flex-direction: column-reverse;
+        border-radius: 0;
+    }
+
+    .modal__half {
+        width: 100%;
+    }
+}
+
+/* Small phones */
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 52px;
+    }
+    .header__para {
+        font-size: 18px;
+    }
+    .nav__link:first-child {
+        display: none;
+    }
+    .project__description--para {
+        display: none;
+    }
+    .project__description {
+        left: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .project__description--subtitle {
+        margin-bottom: 8px;
+    }
+    .modal__half {
+        padding: 40px;
+    }
 }
