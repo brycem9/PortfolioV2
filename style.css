@@ -194,6 +194,8 @@ nav,
     color: #242424;
 }
 
+
+
 /* 
 
 LANDING PAGE
@@ -312,6 +314,7 @@ NAVIGATION
     filter: invert(1);
     width: 50px;
     height: 50px;
+    visibility: hidden;
 }
 
 nav {
@@ -689,6 +692,14 @@ FOOTER
     margin: 20px 0;
     
 }
+
+/* Stars */
+
+
+
+
+
+  
 
 /* Small phones, tablets, large smartphones */
 
