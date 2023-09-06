@@ -2,6 +2,17 @@
 // service_8zt6ylk
 // _Y2Ge7ZZKvxZAk1ef
 
+setTimeout(function() {
+  const colorsElements = document.querySelectorAll('.colors');
+  colorsElements.forEach(function(colorsElement) {
+    colorsElement.style.height = '40px'; // Set the desired height
+    ;   // Set opacity to 1 to reveal the element
+});
+}, 1500);
+
+
+
+
 
 let contrastToggle = false
 function toggleContrast() {

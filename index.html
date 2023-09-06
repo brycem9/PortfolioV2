@@ -11,6 +11,7 @@
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
+    
     <script type="text/javascript">
    (function(){
       emailjs.init("_Y2Ge7ZZKvxZAk1ef");
@@ -20,41 +21,59 @@
 <body>
     
     <section id="landing-page">
-        <nav>
-            <figure>
+        <nav class="opening__transition">
+            <!-- <figure>
                 <img id = "logo"  src="./assets/logo.svg" alt="">
-            </figure>
-            <ul class="nav__link--list">
-                <li class="nav__link" onclick="toggleModal()">
-                    <a href="#" class="
-                    nav__link--anchor 
-                    link__hover--effect
-                    link__hover--effect--black">About</a> 
-                </li>
-                <li class="nav__link">
-                    <a href="#projects" class="
-                    nav__link--anchor 
-                    link__hover--effect
-                    link__hover--effect--black">Projects</a> 
-                </li>
-                <li class="nav__link" onclick="toggleModal()">
-                    <a href="#" class="
-                    nav__link--anchor 
-                    link__hover--effect
-                    link__hover--effect--black">Contact</a> 
-                </li>
-                <li class="nav__link" onclick="toggleContrast()">
-                    <a href="#" class="
-                    nav__link--anchor 
-                    link__hover--effect
-                    link__hover--effect--black"><i class="fa-solid fa-cloud-moon click"></i></a> 
-                </li>
-                
-            </ul>
+            </figure> -->
+            <div class="nav__container">
+                <ul class="nav__link--list">
+                    <li class="nav__link about" onclick="toggleModal()">
+                        <a href="#" class="
+                        nav__link--anchor 
+                        link__hover--effect
+                        link__hover--effect--black
+                        ">ABOUT</a> 
+                    </li>
+                    <li class="nav__link projects">
+                        <a href="#projects" class="
+                        nav__link--anchor 
+                        link__hover--effect
+                        link__hover--effect--black
+                        ">PROJECTS</a> 
+                    </li>
+                    <li class="nav__link contact" onclick="toggleModal()">
+                        <a href="#" class="
+                        nav__link--anchor 
+                        link__hover--effect
+                        link__hover--effect--black
+                        ">CONTACT</a> 
+                    </li>
+                    <li class="nav__link dark__mode--icon" onclick="toggleContrast()">
+                        <a href="#" class="
+                        nav__link--anchor 
+                        link__hover--effect
+                        link__hover--effect--black
+                        "><i class="fa-solid fa-cloud-moon click"></i></a> 
+                    </li>
+                    
+                </ul>
+            </div>
+            
         </nav>
         <header class="header">
             <h1 class="title">Hey</h1>
-            <h1 class="title title--secondary"> <span class="header__text">I'm Bryce.</span></h1>
+            <h1 class="title title--secondary">
+                <div class="animation__container" >
+                    <span class="header__text">I'm Bryce.</span></h1>
+                    <div class="colors__container">
+                        <div class="colors color1"></div>
+                        <div class="colors color2"></div>
+                        <div class="colors color3"></div>
+                        <div class="colors color4"></div>
+                        <div class="colors color5"></div>
+                </div>
+                    
+                </div>
             <p class="header__para">
                 A <span class="header__text"><b>Front-End Software Engineer</b></span>  with a passion for building 
                  
@@ -63,7 +82,7 @@
                 Here's a bit more <span class="header__text"><b> <span class="click" onclick="toggleModal()">about me.</span></b></span> 
             </p>
             <div class="social__links">
-                <a href="#" class = "social__link click"><i class = "fa-brands fa-git"></i></a>
+                <a href="https://github.com/brycem9" target="_blank" class = "social__link click"><i class = "fa-brands fa-git"></i></a>
                 <a href="#" class = "social__link click"><i class = "fa-brands fa-linkedin-in"></i></a>
                 <a href="#" class ="social__link click"><i class = "fa-regular fa-file-pdf"></i></a>
             </div>
@@ -74,6 +93,7 @@
         <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
         </a>
+        
         <div class="modal">
             <div class="modal__half modal__about">
             <h3 class="modal__title modal__title--about">About me.</h3>
@@ -102,6 +122,10 @@
                     <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="">
                     <span class="language__name ">React</span>
                 </figure>
+                <!-- <figure class="modal__language language__wordpress">
+                    <img class="modal__language--img" src="./assets/WordPress_blue_logo.svg.png" alt="">
+                    <span class="language__name ">WordPress</span>
+                </figure> -->
             </div>
             </div>
             <div class="modal__half modal__contact">
@@ -148,7 +172,7 @@
                         <div class="project__wrapper">
                             <img src="./assets/BMWportioMockup.png" class = "project__img" alt="">
                             <div class="project__wrapper--background">
-
+                                
                             </div>
                             <div class="project__description">
                                 <h3 class="project__description--title">
@@ -165,6 +189,33 @@
                                         <i class = "fa-brands fa-git"></i>
                                     </a>
                                     <a href="#" class = "project__description--link click">
+                                        <i class="fa-solid fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/Screenshot (48).png" class = "project__img" alt="">
+                            <div class="project__wrapper--background">
+                                
+                            </div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Twitter/X Clone
+                                </h3>
+                                <h4 class="project__description--subtitle">
+                                    HTML, TailwindCSS, JavaScript, React, Redux, & Next.js
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quis magnam reiciendis vel totam, ratione saepe, et dolore facere laboriosam voluptates doloremque recusandae. Ducimus officiis iure odio iste ratione aliquid.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/brycem9/twitter-clone" target="_blank" class = "project__description--link click">
+                                        <i class = "fa-brands fa-git"></i>
+                                    </a>
+                                    <a href="https://twitter-clone-z8rgdfxne-brycem9.vercel.app/" target="_blank" class = "project__description--link click">
                                         <i class="fa-solid fa-link"></i>
                                     </a>
                                 </div>
