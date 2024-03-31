@@ -22,12 +22,14 @@
     
     <section id="landing-page">
         <nav class="opening__transition">
-            <!-- <figure>
+            <!-- <figure> 
                 <img id = "logo"  src="./assets/logo.svg" alt="">
             </figure> -->
+           
             <div class="nav__container">
                 <ul class="nav__link--list">
-                    <li class="nav__link about" onclick="toggleModal()">
+                    <div class="nav__links">
+                     <li class="nav__link about" onclick="toggleModal()">
                         <a href="#" class="
                         nav__link--anchor 
                         link__hover--effect
@@ -47,7 +49,8 @@
                         link__hover--effect
                         link__hover--effect--black
                         ">CONTACT</a> 
-                    </li>
+                    </li>   
+                    </div>
                     <li class="nav__link dark__mode--icon" onclick="toggleContrast()">
                         <a href="#" class="
                         nav__link--anchor 
@@ -83,8 +86,12 @@
             </p>
             <div class="social__links">
                 <a href="https://github.com/brycem9" target="_blank" class = "social__link click"><i class = "fa-brands fa-git"></i></a>
-                <a href="#" class = "social__link click"><i class = "fa-brands fa-linkedin-in"></i></a>
-                <a href="#" class ="social__link click"><i class = "fa-regular fa-file-pdf"></i></a>
+                <a href="https://www.linkedin.com/in/bryce-mciver-182b82276/" target="_blank" class = "social__link click"><i class = "fa-brands fa-linkedin-in"></i></a>
+                <a href="assets\ResumeDraftBryceMcIver.pdf" target="_blank" class ="social__link click"><i class = "fa-regular fa-file-pdf"></i></a>
+            </div>
+            <div class="gradient-container">
+                <div class="gradient">
+                            </div>
             </div>
         </header>
         <a href="#"><button class="mail__btn click" onclick="toggleModal()">
@@ -99,9 +106,8 @@
             <h3 class="modal__title modal__title--about">About me.</h3>
             <h4 class="modal__subtitle modal__subtitle--about">Frontend Software Engineer.</h4>
             <p class="modal--para">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                Aperiam itaque vitae magni aliquam illum eos voluptatibus! 
-                Lorem ipsum dolor sit amet consectetur, harum officia?
+                Driven by a genuine interest in design and web development, I've dedicated myself to continuously refining my skills. 
+                With a focus on the frontend, this is a glimpse into my current tech stack:
             </p>
             <div class="modal__languages">
                 <figure class="modal__language language__html">
@@ -122,8 +128,17 @@
                     <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="">
                     <span class="language__name ">React</span>
                 </figure>
+                <figure class="modal__language language__redux">
+                    <img class="modal__language--img" src="assets\2020-05-04-ionic-react-and-redux-74ed1080.png" alt="">
+                    <span class="language__name ">Redux</span> 
+                </figure>
+                <figure class="modal__language language__next">
+                    <img class="modal__language--img" src="https://www.drupal.org/files/project-images/nextjs-icon-dark-background.png" alt="">
+                    <span class="language__name ">Next.js</span> 
+                </figure>
+                
                 <!-- <figure class="modal__language language__wordpress">
-                    <img class="modal__language--img" src="./assets/WordPress_blue_logo.svg.png" alt="">
+                    <img class="modal__language--img" src="./assets/Worv dPress_blue_logo.svg.png" alt="">
                     <span class="language__name ">WordPress</span>
                 </figure> -->
             </div>
@@ -170,25 +185,24 @@
                 <ul class="project__list">
                     <li class="project">
                         <div class="project__wrapper">
-                            <img src="./assets/BMWportioMockup.png" class = "project__img" alt="">
+                            <img src="assets\Screenshot (78).png" class = "project__img" alt="">
                             <div class="project__wrapper--background">
                                 
                             </div>
                             <div class="project__description">
                                 <h3 class="project__description--title">
-                                    BMW Landing Concept
+                                    Acne Studios E-Commerce Demo
                                 </h3>
                                 <h4 class="project__description--subtitle">
-                                    HTML, CSS, JavaScript
+                                    NextJs, React, Redux, TailwindCSS, JavaScript, & Stripe
                                 </h4>
                                 <p class="project__description--para">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quis magnam reiciendis vel totam, ratione saepe, et dolore facere laboriosam voluptates doloremque recusandae. Ducimus officiis iure odio iste ratione aliquid.
-                                </p>
+                                    A comprehensive demo featuring a user experience inspired by the luxury fashion house 'Acne Studios'; demonstrating an unconventional yet aesthetic design, accompanied by streamlined checkout functionality using Stripe payment integration.                           </p>
                                 <div class="project__description--links">
                                     <a href="#" class = "project__description--link click">
                                         <i class = "fa-brands fa-git"></i>
                                     </a>
-                                    <a href="#" class = "project__description--link click">
+                                    <a href="https://acne-studios-ecommerce.vercel.app/" target="_blank" class = "project__description--link click">
                                         <i class="fa-solid fa-link"></i>
                                     </a>
                                 </div>
@@ -209,7 +223,7 @@
                                     HTML, TailwindCSS, JavaScript, React, Redux, & Next.js
                                 </h4>
                                 <p class="project__description--para">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti quis magnam reiciendis vel totam, ratione saepe, et dolore facere laboriosam voluptates doloremque recusandae. Ducimus officiis iure odio iste ratione aliquid.
+                                    Replication of Twitter UI along with posting and commenting functionality. Utilizes Firebase for user sign-in and authentication.
                                 </p>
                                 <div class="project__description--links">
                                     <a href="https://github.com/brycem9/twitter-clone" target="_blank" class = "project__description--link click">

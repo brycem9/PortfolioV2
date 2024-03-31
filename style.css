@@ -27,8 +27,13 @@ html {
 }
 
 section {
-  background-color: rgb(245, 245, 245);
-  transition: all 300ms ease;
+  
+}
+
+video {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
 }
 
 button {
@@ -56,6 +61,8 @@ textarea:focus {
   line-height: 1;
   animation: header-animation 1500ms;
 }
+
+
 
 @keyframes header-animation {
   0% {
@@ -240,7 +247,14 @@ LANDING PAGE
   width: 100%;
   max-width: 1000px;
   padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+ 
+  
 }
+
+
 
 .colors {
   background-color: #1c1d25;
@@ -410,6 +424,21 @@ nav {
   margin: 0 12px;
 }
 
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.gif {
+  position: absolute;
+  top: -150px;
+  right: -80px;
+  z-index: -1;
+  filter: invert() blur(30px) hue-rotate(290deg);
+  mix-blend-mode: dar;
+}
+
 .about {
   animation: navanimation 1500ms, opening 2000ms;
 }
@@ -505,6 +534,7 @@ MOODL
 .modal__language {
   width: 25%;
   padding: 12px;
+  padding-top: 32px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -525,8 +555,12 @@ MOODL
   animation-delay: 375ms;
 }
 
-.language__wordpress {
+.language__redux {
   animation-delay: 475ms;
+}
+
+.language__next {
+  animation-delay: 575ms;
 }
 
 .modal__language:hover .language__name {
