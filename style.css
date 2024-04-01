@@ -250,7 +250,7 @@ LANDING PAGE
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
- 
+  margin-top: 18px;
   
 }
 
@@ -850,9 +850,7 @@ FOOTER
     border-radius: 0;
   }
 
-  .nav__links {
-    display: none;
-  }
+ 
 
   .modal__half {
     width: 100%;
