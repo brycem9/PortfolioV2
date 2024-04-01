@@ -836,6 +836,10 @@ FOOTER
     font-size: 20px;
   }
 
+  .colors__container {
+    display: none;
+  }
+
   .modal {
     top: 0;
     left: 0;
@@ -877,5 +881,9 @@ FOOTER
   }
   .modal__half {
     padding: 40px;
+  }
+
+  .colors__container {
+    display: none;
   }
 }
