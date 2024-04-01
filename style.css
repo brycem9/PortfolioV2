@@ -850,7 +850,11 @@ FOOTER
     flex-direction: column-reverse;
     border-radius: 0;
   }
-
+  
+  nav {
+    margin-top: 18px;
+    padding-top: 18px;
+  }
  
 
   .modal__half {
