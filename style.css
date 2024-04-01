@@ -850,6 +850,10 @@ FOOTER
     border-radius: 0;
   }
 
+  .nav__links {
+    display: none;
+  }
+
   .modal__half {
     width: 100%;
   }
